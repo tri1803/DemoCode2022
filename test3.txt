@@ -1,0 +1,9 @@
+bước 1: git clone https://github.com/tri1803/DemoCode2022.git
+bước 2: ví dụ đang ở nhánh develop => git pull (lấy source code mới nhất)
+bước 3: tạo ra 1 nhánh (theo quy chuẩn) để làm việc => code
+bước 4: merge nhánh develop về nhánh của mình (trong quá trình học sẽ ít dùng)
+bước 5: đẩy code lên git
+ - git add: chọn các file thay đổi 
+ - git commit: đẩy file thay đổi lên vùng nhớ stage
+ - git push origin <tên nhánh>(ví dụ: nhánh A) => code cùng nhánh đó sẽ được đẩy lên git
+ - từ nhánh A => pull request vào nhánh develop
