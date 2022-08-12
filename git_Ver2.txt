@@ -1,0 +1,10 @@
+Hướng dẫn git khi cần thay đổi lại source code chỉ với 1 commit.
+bước 1: vào github, quay về source code => chọn nhánh mình muốn reset(nhánh mình tạo pull request)
+bước 2: tìm lại history lấy id của nhánh gần nhất được merge => copy <id>
+bước 3: quay về source code ở local => git reset <id>(source quay về như lúc ban đầu)
+bước 4: tiếp tục sửa code
+bước 5: quay lại làm các thao tác với git
+- git add 
+- git commit
+- lúc này mình sử dụng git force push bằng lệnh sau
+git push -f --set-upstream origin <tên nhánh>
