@@ -8,9 +8,9 @@ namespace Webdemo1.Models
 {
     public class DataContext : DbContext
     {
-        public DbSet<Categories> Categories { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
-        public DbSet<Products> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
          
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
     }

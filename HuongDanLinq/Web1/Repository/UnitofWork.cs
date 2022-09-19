@@ -10,15 +10,15 @@ namespace Webdemo1.Repository
     {
         private readonly DataContext _dataContext;
 
-        private IBaseService<Categories> _categoryBaseService;
-        private IBaseService<Products> _productBaseService;
+        private IBaseService<Category> _categoryBaseService;
+        private IBaseService<Product> _productBaseService;
         public UnitofWork(DataContext dataContext) => _dataContext = dataContext;
 
-        public IBaseService<Categories> CategoryBaseService => _categoryBaseService =
-                    _categoryBaseService ?? new BaseService<Categories>(_dataContext);
+        public IBaseService<Category> CategoryBaseService => _categoryBaseService =
+                    _categoryBaseService ?? new BaseService<Category>(_dataContext);
 
-        public IBaseService<Products> ProductBaseService => _productBaseService =
-                    _productBaseService ?? new BaseService<Products>(_dataContext);
+        public IBaseService<Product> ProductBaseService => _productBaseService =
+                    _productBaseService ?? new BaseService<Product>(_dataContext);
 
         /// <summary>
         /// save change

@@ -8,8 +8,8 @@ namespace Webdemo1.Repository
 {
     public interface IUnitofWork
     {
-        IBaseService<Categories> CategoryBaseService { get; }
-        IBaseService<Products> ProductBaseService { get; }
+        IBaseService<Category> CategoryBaseService { get; }
+        IBaseService<Product> ProductBaseService { get; }
         /// <summary>
         /// save
         /// </summary>
